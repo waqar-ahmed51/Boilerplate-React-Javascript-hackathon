@@ -1,14 +1,18 @@
-import { Alert } from '@mui/material';
 import './App.css';
-import AccessibleIcon from '@mui/icons-material/Accessible';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <h1>test</h1>
-      <Alert >sfasf</Alert>
-      <AccessibleIcon />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
