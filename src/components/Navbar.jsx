@@ -5,16 +5,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
+import styled from "styled-components";
 
-const NavbarHeader = () => {
+const Wrapper=styled.div`
+padding: 0px 40px;
+background-color: #abe9f9;
+`;
+
+const NavbarTop = () => {
   return (
-      <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-      <Container>
+    <Wrapper>
+      <Navbar collapseOnSelect expand="md" >
       <Link to="/" className="CustomRouterLink"><Navbar.Brand >Home</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link><Link to="/boilerplate" className="CustomRouterLink">Boilerplate</Link></Nav.Link>
+            <Nav.Link><Link to="/resources" className="CustomRouterLink">resources</Link></Nav.Link>
           </Nav>
           <Nav>
           <Badge badgeContent={4} color="primary">
@@ -22,9 +28,9 @@ const NavbarHeader = () => {
           </Badge>
           </Nav>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
+    </Wrapper>
   )
 }
 
-export default NavbarHeader;
+export default NavbarTop;
