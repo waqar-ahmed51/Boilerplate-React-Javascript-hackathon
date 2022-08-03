@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const Container = styled.div`
+min-height: calc(100vh - 59px - 66px);
+display: flex;
+justify-content: center;
+align-items: center;
+`;
 const Home = () => {
   return (
-    <div>
-      <h4>Home - In Hackhton use material-ui or bootstrap don't make your custom UI components</h4>
-    </div>
+    <Container>
+      <h4>Boilerplaer Homes - Go to resources</h4>
+    </Container>
   )
 }
 

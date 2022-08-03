@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import styled from "styled-components";
 
 const Wrapper=styled.div`
-padding: 0px 40px;
+padding: 7px 40px;
 background-color: #abe9f9;
 `;
 
@@ -20,7 +19,7 @@ const NavbarTop = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link><Link to="/resources" className="CustomRouterLink">resources</Link></Nav.Link>
+            <Link to="/resources" className="CustomRouterLink mynavlink">resources</Link>
           </Nav>
           <Nav>
           <Badge badgeContent={4} color="primary">

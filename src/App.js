@@ -1,3 +1,4 @@
+// Custom CSS is in .css file - for all the components - add class and code in css file
 import './App.css';
 //Bootstrap required imports
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -5,7 +6,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Resources from './pages/Resources';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </Router>

@@ -38,8 +38,19 @@
   }
 }
 
+/* Add your custom CSS here for your components */
 /* For Router Link tag */
 .CustomRouterLink {
   color: inherit;
   text-decoration: inherit;
+}
+
+.mynavlink {
+  color: black;
+  padding: 0px 20px;
+  font-size: large;
+}
+
+.mynavlink:hover {
+  color: rgb(83, 81, 81);
 }
