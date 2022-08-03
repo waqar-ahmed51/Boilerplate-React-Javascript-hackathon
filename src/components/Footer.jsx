@@ -38,6 +38,7 @@ const Developer = styled.div`
 const Footer = () => {
   return (
     <Container>
+      Footer content here
       <Copyrights>
         © All Rights Reserved. Designed & Developed by
         <Developer> WAQAR AHMED</Developer>
