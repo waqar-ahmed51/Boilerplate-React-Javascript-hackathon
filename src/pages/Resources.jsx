@@ -45,27 +45,24 @@ const Resources = () => {
       <ResourcesContainer>
         <h4>React Toastify</h4>
         <Button variant="secondary" onClick={toastShow}>Toast</Button>
-        <ToastContainer/>
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>React Redux</h4>
         <Button variant="secondary">Increment Counter</Button>
         <br/>
         <Button variant="secondary">Add Object to Store</Button>
-        <ToastContainer/>
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>Ready RestAPI - Node.js Express.js MongoDB</h4>
         <p>GET, POST, DELETE, PUT - test all these</p>
         <p>Add UI(buttons, forms etc) Here and Test</p>
-        <ToastContainer/>
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>Custom fonts are integrated</h4>
         <p>This app have custom fonts overall</p>
         <p>To change get links and css from Google fonts add into public/index.html </p>
-        <ToastContainer/>
       </ResourcesContainer>
+      <ToastContainer/>
     </Container>
   )
 }
