@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/boilerplate-react-javascript-hackathon/static/css/main.d2abadae.css",
+    "main.js": "/boilerplate-react-javascript-hackathon/static/js/main.ddad32a4.js",
+    "static/js/787.bef0a35a.chunk.js": "/boilerplate-react-javascript-hackathon/static/js/787.bef0a35a.chunk.js",
+    "index.html": "/boilerplate-react-javascript-hackathon/index.html",
+    "main.d2abadae.css.map": "/boilerplate-react-javascript-hackathon/static/css/main.d2abadae.css.map",
+    "main.ddad32a4.js.map": "/boilerplate-react-javascript-hackathon/static/js/main.ddad32a4.js.map",
+    "787.bef0a35a.chunk.js.map": "/boilerplate-react-javascript-hackathon/static/js/787.bef0a35a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2abadae.css",
+    "static/js/main.ddad32a4.js"
+  ]
+}
