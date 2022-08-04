@@ -10,9 +10,6 @@ import ErrorPage from './pages/ErrorPage';
 import Resources from './pages/Resources';
 import Footer from './components/Footer';
 
-
-
-
 function App() {
   return (
     <Router>

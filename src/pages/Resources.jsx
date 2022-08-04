@@ -54,6 +54,17 @@ const Resources = () => {
   return (
     <Container>
       <ResourcesContainer>
+        <h4>Packages Installed</h4>
+          <p>material UI</p>
+          <p>material UI - Icons</p>
+          <p>styled-components</p>
+          <p>react-routers</p>
+          <p>redux</p>
+          <p>react-redux</p>
+          <p>react-toastify</p>
+          <p>gh-pages</p>
+      </ResourcesContainer>
+      <ResourcesContainer>
         <h4>Important Resources Links</h4>
         <a href="https://mui.com/material-ui/getting-started/overview/" target="_blank" rel="noreferrer">Material UI</a>
         <a href="https://mui.com/material-ui/material-icons/#main-content" target="_blank" rel="noreferrer">Material UI Icons</a>
