@@ -19,8 +19,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/boilerplate-react-javascript-hackathon/" element={<Home />} />
+        <Route path="/boilerplate-react-javascript-hackathon/resources" element={<Resources />} />
+        <Route path="/boilerplate-react-javascript-hackathon/resources" element={<Resources />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

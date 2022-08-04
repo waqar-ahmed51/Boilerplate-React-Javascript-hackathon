@@ -20,11 +20,11 @@ const NavbarTop = () => {
   return (
     <Wrapper>
       <Navbar collapseOnSelect expand="md" >
-      <Link to="/" className="CustomRouterLink"><Navbar.Brand >Home</Navbar.Brand></Link>
+      <Link to="/boilerplate-react-javascript-hackathon/" className="CustomRouterLink"><Navbar.Brand >Home</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/resources" className="CustomRouterLink mynavlink">resources</Link>
+            <Link to="/boilerplate-react-javascript-hackathon/resources" className="CustomRouterLink mynavlink">resources</Link>
           </Nav>
           <Nav>
           <Badge badgeContent={StateStore} color="primary">
