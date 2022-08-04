@@ -57,6 +57,7 @@ const Resources = () => {
         <h4>Packages Installed</h4>
           <p>material UI</p>
           <p>material UI - Icons</p>
+          <p>React Bootstrap</p>
           <p>styled-components</p>
           <p>react-routers</p>
           <p>redux</p>
