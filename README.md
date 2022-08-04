@@ -1,4 +1,4 @@
-##Boilerplate React Javascript - Hackathon
+# Boilerplate React Javascript - Hackathon
 
 <p><br></p>
 <p>This is a ready boilerplate with all the necessary packages and implementation which are always required to start any react-based frontend project.&nbsp;</p>
