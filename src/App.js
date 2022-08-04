@@ -6,8 +6,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import ErrorPage from './pages/ErrorPage';
 import Resources from './pages/Resources';
 import Footer from './components/Footer';
+
+
 
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router>

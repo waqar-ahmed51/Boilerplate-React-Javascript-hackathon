@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import Alert from 'react-bootstrap/Alert';
 
 const Container = styled.div`
 min-height: calc(100vh - 59px - 66px);
@@ -22,7 +25,21 @@ padding: 20px;
 align-items: center;
 margin: 10px;
 `;
+
 const Resources = () => {
+
+  //React-Redux getting the store
+  const StateStore = useSelector((state) => state.AppReducerStore);
+  // console.log(StateStore);
+
+  const dispatch = useDispatch();
+
+  const dummyobject={
+    id:1,
+    title:"Title here",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aut quisquam iure quae neque commodi autem maiores nobis doloremque deleniti, praesentium eos ea fugit perferendis sapiente ipsa error laudantium consectetur."
+  }
+
   const toastShow =() =>{
     toast.success('Toast Message', {
       position: toast.POSITION.TOP_RIGHT
@@ -48,14 +65,28 @@ const Resources = () => {
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>React Redux</h4>
-        <Button variant="secondary">Increment Counter</Button>
+        <Button variant="secondary"  
+        onClick={() =>
+            dispatch({
+              type: "increment"
+            })
+          }>Increment Counter</Button>
         <br/>
-        <Button variant="secondary">Add Object to Store</Button>
+        <Button variant="secondary" onClick={() =>
+            dispatch({
+              type: "addObject",
+              payload: dummyobject,
+            })
+          }>Add Object to Store</Button>
+          <br/>
+          {StateStore.ObjectData.map((obj)=>(<Alert key="success" variant="success">Object Added</Alert>))}
+           
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>Ready RestAPI - Node.js Express.js MongoDB</h4>
         <p>GET, POST, DELETE, PUT - test all these</p>
         <p>Add UI(buttons, forms etc) Here and Test</p>
+       
       </ResourcesContainer>
       <ResourcesContainer>
         <h4>Custom fonts are integrated</h4>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const Wrapper=styled.div`
 padding: 7px 40px;
@@ -12,6 +13,10 @@ background-color: #abe9f9;
 `;
 
 const NavbarTop = () => {
+
+  //React-Redux getting the store
+  const StateStore = useSelector((state) => state.Count);
+
   return (
     <Wrapper>
       <Navbar collapseOnSelect expand="md" >
@@ -22,7 +27,7 @@ const NavbarTop = () => {
             <Link to="/resources" className="CustomRouterLink mynavlink">resources</Link>
           </Nav>
           <Nav>
-          <Badge badgeContent={4} color="primary">
+          <Badge badgeContent={StateStore} color="primary">
               <MailIcon color="action" />
           </Badge>
           </Nav>

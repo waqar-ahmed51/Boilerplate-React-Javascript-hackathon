@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-min-height: calc(100vh - 59px - 66px);
+min-height: calc(100vh - 60px - 90px);
 display: flex;
 justify-content: center;
 align-items: center;

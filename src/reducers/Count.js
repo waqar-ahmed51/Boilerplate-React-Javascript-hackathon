@@ -1,6 +1,6 @@
 const Count = (state = 0, action) => {
     switch (action.type) {
-        case 'incremet':
+        case 'increment':
             return ++state;
         default:
             return state;
